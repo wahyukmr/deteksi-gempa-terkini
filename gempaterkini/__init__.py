@@ -12,6 +12,7 @@ def ekstraksi_data():
     Dirasakan (Skala MMI): II Kaimana
     :return:
     """
+
     try:
         content = requests.get('https://bmkg.go.id')
     except Exception:
@@ -73,5 +74,7 @@ def tampilkan_data(result):
     print(f"lokasi {result['lokasi']}")
     print(f"Dirasakan {result['dirasakan']}")
 
-# if __name__ == '__main__':
-#   print('ini adalah package gempaterkini')
+
+if __name__ == '__main__':
+    print('ini adalah package gempaterkini')
+
