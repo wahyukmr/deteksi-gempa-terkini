@@ -6,6 +6,6 @@ MODULARISASI DENGAN PACKAGE
 import gempaterkini
 
 if __name__ == '__main__':
-    print('aplikasi utama')
+    print(f'aplikasi utama menggunakan package yang memiliki deskripsi {gempaterkini.description}')
     result = gempaterkini.ekstraksi_data()
     gempaterkini.tampilkan_data(result)
